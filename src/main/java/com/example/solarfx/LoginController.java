@@ -1,4 +1,4 @@
-package com.example.solarfx.controllers;
+package com.example.solarfx;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;

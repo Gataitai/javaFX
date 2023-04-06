@@ -3,7 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.solarfx.controllers.LoginController">
+<AnchorPane prefHeight="390.0" prefWidth="608.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.solarfx.LoginController">
    <children>
       <TextField fx:id="usernameField" layoutX="182.0" layoutY="139.0" prefHeight="25.0" prefWidth="236.0" />
       <TextField fx:id="passwordField" layoutX="182.0" layoutY="188.0" prefHeight="25.0" prefWidth="236.0" />
