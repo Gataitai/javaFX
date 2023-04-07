@@ -3,7 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="20" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" style="-fx-background-color: #007acc;" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.solarfx.controllers.HeaderController">
+<AnchorPane prefHeight="20" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" style="-fx-background-color: #bbbbbb;" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.solarfx.controllers.HeaderController">
     <MenuBar layoutX="633.0" prefHeight="20.0" prefWidth="67.0">
         <Menu text="Menu">
             <MenuItem onAction="#handleLogout" text="Logout" />

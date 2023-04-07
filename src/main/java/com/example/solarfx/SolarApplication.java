@@ -1,8 +1,6 @@
 package com.example.solarfx;
 
-import com.example.solarfx.models.Customer;
-import com.example.solarfx.models.Employee;
-import com.example.solarfx.models.Role;
+import com.example.solarfx.models.*;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -10,6 +8,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.NoSuchElementException;
 
 public class SolarApplication extends Application {
 
@@ -17,7 +16,11 @@ public class SolarApplication extends Application {
     private static ArrayList<Customer> customers = new ArrayList<>();
     //list with employees
     private static ArrayList<Employee> employees = new ArrayList<>();
-    //saving stage given in start method
+    //list with available panels
+    private static ArrayList<Panel> panels = new ArrayList<>();
+    //list with all quotations;
+    private static ArrayList<Quotation> quotations = new ArrayList<>();
+    private sta
     public static Stage stage;
 
     @Override
@@ -105,6 +108,6 @@ public class SolarApplication extends Application {
                 return employee;
             }
         }
-        return null;
+        throw new NoSuchElementException("Employee with username: " + username + " doesnt exist!");
     }
 }
