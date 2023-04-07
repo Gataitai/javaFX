@@ -6,4 +6,6 @@ module com.example.solarfx {
 
     opens com.example.solarfx to javafx.fxml;
     exports com.example.solarfx;
+    exports com.example.solarfx.controllers;
+    opens com.example.solarfx.controllers to javafx.fxml;
 }

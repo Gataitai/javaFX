@@ -8,7 +8,8 @@
 
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.solarfx.Homepage"
+            fx:controller="com.example.solarfx.controllers.AdviseurController"
             prefHeight="400.0" prefWidth="600.0">
 
+    <fx:include source="header.fxml" />
 </AnchorPane>
