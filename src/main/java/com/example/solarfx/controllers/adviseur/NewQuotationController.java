@@ -1,21 +1,12 @@
-package com.example.solarfx.controllers;
+package com.example.solarfx.controllers.adviseur;
 
 import com.example.solarfx.SolarApplication;
 import com.example.solarfx.models.Customer;
-import com.example.solarfx.models.Employee;
-import com.example.solarfx.models.Panel;
-import com.example.solarfx.models.Quotation;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-import javafx.scene.paint.Paint;
 
-import java.io.IOException;
-import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Arrays;
-
-public class AdviseurController {
+public class NewQuotationController {
     @FXML
     private ComboBox<Customer> customer;
 
@@ -34,6 +25,12 @@ public class AdviseurController {
     @FXML
     private ChoiceBox<Customer> panels;
 
+    @FXML
+    private Button submit;
+
+    @FXML
+    private Button back;
+
     public void initialize() {
         customer.setItems(FXCollections.observableArrayList(SolarApplication.customers));
 
@@ -46,9 +43,10 @@ public class AdviseurController {
     private void createQuotation() {
         System.out.println("lmao");
     }
+
     @FXML
-    private void setNewQuotationScene() {
-        SolarApplication.setScene("adviseur/new-quotation.fxml");
+    private void setOverviewScreen() {
+        SolarApplication.setScene("adviseur/quotation-overview.fxml");
     }
 }
 

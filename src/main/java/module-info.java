@@ -8,4 +8,14 @@ module com.example.solarfx {
     exports com.example.solarfx;
     exports com.example.solarfx.controllers;
     opens com.example.solarfx.controllers to javafx.fxml;
+    exports com.example.solarfx.controllers.adviseur;
+    opens com.example.solarfx.controllers.adviseur to javafx.fxml;
+    exports com.example.solarfx.controllers.admin;
+    opens com.example.solarfx.controllers.admin to javafx.fxml;
+    exports com.example.solarfx.controllers.inkoop;
+    opens com.example.solarfx.controllers.inkoop to javafx.fxml;
+    exports com.example.solarfx.controllers.installeur;
+    opens com.example.solarfx.controllers.installeur to javafx.fxml;
+    exports com.example.solarfx.controllers.planner;
+    opens com.example.solarfx.controllers.planner to javafx.fxml;
 }
