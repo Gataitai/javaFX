@@ -1,18 +1,23 @@
 package com.example.solarfx.controllers;
 
+import com.example.solarfx.SolarApplication;
 import com.example.solarfx.models.Customer;
+import com.example.solarfx.models.Employee;
 import com.example.solarfx.models.Panel;
+import com.example.solarfx.models.Quotation;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.scene.paint.Paint;
 
+import java.io.IOException;
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class AdviseurController {
-    private static final String[] OPTIONS = {"Apple", "Banana", "Cherry", "Durian", "Elderberry", "Fig"};
     @FXML
-    private ComboBox<String> customer;
+    private ComboBox<Customer> customer;
 
     @FXML
     private TextField yearlyEnergyUsage;
@@ -27,16 +32,23 @@ public class AdviseurController {
     private TextField yieldLoss;
 
     @FXML
-    private ChoiceBox<String> panels;
-
-
-
+    private ChoiceBox<Customer> panels;
 
     public void initialize() {
-        customer.setItems(FXCollections.observableArrayList(OPTIONS));
+        customer.setItems(FXCollections.observableArrayList(SolarApplication.customers));
+
         customer.setEditable(true);
 
-        panels.setItems(FXCollections.observableArrayList(OPTIONS));
+        panels.setItems(FXCollections.observableArrayList(SolarApplication.customers));
+    }
+
+    @FXML
+    private void createQuotation() {
+        System.out.println("lmao");
+    }
+    @FXML
+    private void setNewQuotationScene() {
+        SolarApplication.setScene("adviseur/new-quotation.fxml");
     }
 }
 

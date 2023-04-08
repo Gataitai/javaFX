@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.solarfx.controllers.AdviseurController">
+
+    <fx:include source="../header.fxml" />
+
+    <Label layoutX="15.0" layoutY="51.0" prefHeight="17.0" prefWidth="62.0" text="Customer" />
+    <ComboBox fx:id="customer" layoutX="14.0" layoutY="68.0" prefHeight="25.0" prefWidth="172.0" />
+
+    <Label layoutX="14.0" layoutY="118.0" prefHeight="17.0" prefWidth="166.0" text="Yearly engery usage watts" />
+    <TextField fx:id="yearlyEnergyUsage" layoutX="14.0" layoutY="135.0" prefHeight="25.0" prefWidth="172.0" />
+
+    <Label layoutX="14.0" layoutY="190.0" text="Roofsurface" />
+    <TextField fx:id="roofSurface" layoutX="14.0" layoutY="207.0" prefHeight="25.0" prefWidth="172.0" />
+
+    <CheckBox layoutX="21.0" layoutY="257.0" mnemonicParsing="false" text="3 phase needed" />
+
+    <Label layoutX="14.0" layoutY="298.0" text="Yield loss" />
+    <TextField fx:id="yieldLoss" layoutX="14.0" layoutY="315.0" prefHeight="25.0" prefWidth="172.0" />
+
+    <Label layoutX="14.0" layoutY="365.0" text="Add panels" />
+    <ChoiceBox fx:id="panels" layoutX="14.0" layoutY="382.0" prefHeight="25.0" prefWidth="172.0" />
+
+    <Button layoutX="15.0" layoutY="441.0" mnemonicParsing="false" onAction="#createQuotation" prefHeight="25.0" prefWidth="667.0" text="submit" />
+
+    <ListView layoutX="420.0" layoutY="60.0" prefHeight="346.0" prefWidth="260.0" />
+</AnchorPane>

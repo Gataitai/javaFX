@@ -5,8 +5,8 @@ public class Employee extends Person {
     private final String password;
     private Role role;
 
-    public Employee(String firstName, String lastName, String username, String password, Role role){
-        super(firstName, lastName);
+    public Employee(String uuid, String firstName, String lastName, String username, String password, Role role){
+        super(uuid, firstName, lastName);
         this.username = username;
         this.password = password;
         this.role = role;

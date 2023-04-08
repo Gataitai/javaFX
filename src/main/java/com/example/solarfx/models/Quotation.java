@@ -6,6 +6,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class Quotation {
+
     private Customer customer;
     private int yearlyEnergyUsage;
     private int roofSurface;
@@ -14,8 +15,12 @@ public class Quotation {
     private LocalDate buildDate;
     private final ArrayList<Panel> panels = new ArrayList<>();
 
-    public Quotation(Customer customer){
+    public Quotation(Customer customer, int yearlyEnergyUsage, int roofSurface, boolean threePhaseConnectionNeeded, int yieldLoss) {
         this.customer = customer;
+        this.yearlyEnergyUsage = yearlyEnergyUsage;
+        this.roofSurface = roofSurface;
+        this.threePhaseConnectionNeeded = threePhaseConnectionNeeded;
+        this.yieldLoss = yieldLoss;
     }
 
     public void addPanel(Panel panel){

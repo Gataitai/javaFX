@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import com.example.solarfx.models.Employee;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.paint.Paint;
 
@@ -17,7 +18,7 @@ public class LoginController {
     private TextField usernameField;
 
     @FXML
-    private TextField passwordField;
+    private PasswordField passwordField;
 
     @FXML
     private Button submitButton;
@@ -34,11 +35,10 @@ public class LoginController {
             //switch for employee role. since employee is checked first employee can never be null in this part of the scope.
             Employee employee = SolarApplication.getEmployeeByUsername(username);
             switch (employee.getRole()) {
-                case INSTALLEUR -> SolarApplication.setScene("installeur.fxml");
-                case ADVISEUR -> SolarApplication.setScene("adviseur.fxml");
-                case INKOOP -> SolarApplication.setScene("inkoop.fxml");
-                case PLANNER -> SolarApplication.setScene("planner.fxml");
-                case ADMIN -> SolarApplication.setScene("hello-view.fxml");
+                case INSTALLEUR -> SolarApplication.setScene("installeur/installeur-overview.fxml");
+                case ADVISEUR -> SolarApplication.setScene("adviseur/quotation-overview.fxml");
+                case INKOOP -> SolarApplication.setScene("inkoop/new-panel.fxml");
+                case PLANNER -> SolarApplication.setScene("planner/planner.fxml");
             }
         } else {
             errorLabel.setTextFill(Paint.valueOf("red"));

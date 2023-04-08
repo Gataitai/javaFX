@@ -9,24 +9,27 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.NoSuchElementException;
+import java.util.UUID;
 
 public class SolarApplication extends Application {
 
     //list with customers
-    private static final ArrayList<Customer> customers = new ArrayList<>();
+    public static final ArrayList<Customer> customers = new ArrayList<>();
     //list with employees
-    private static final ArrayList<Employee> employees = new ArrayList<>();
-    private static final ArrayList<InstallerGroup> installerGroups = new ArrayList<>();
+    public static final ArrayList<Employee> employees = new ArrayList<>();
+    //list with installergroups
+    public static final ArrayList<InstallerGroup> installerGroups = new ArrayList<>();
     //list with available panels
-    private static final ArrayList<Panel> panels = new ArrayList<>();
+    public static final ArrayList<Panel> panels = new ArrayList<>();
     //list with all quotations;
-    private static final ArrayList<Quotation> quotations = new ArrayList<>();
+    public static final ArrayList<Quotation> quotations = new ArrayList<>();
     public static Stage stage;
 
     @Override
     public void start(Stage stage) {
 
         employees.add(new Employee(
+                UUID.randomUUID().toString(),
                 "mathijs",
                 "pattipeilohy",
                 "mpa1",
@@ -35,6 +38,7 @@ public class SolarApplication extends Application {
         ));
 
         employees.add(new Employee(
+                UUID.randomUUID().toString(),
                 "adam",
                 "geerdink",
                 "age1",
@@ -43,6 +47,7 @@ public class SolarApplication extends Application {
         ));
 
         employees.add(new Employee(
+                UUID.randomUUID().toString(),
                 "samme",
                 "logtmijer",
                 "slo1",
@@ -51,6 +56,7 @@ public class SolarApplication extends Application {
         ));
 
         employees.add(new Employee(
+                UUID.randomUUID().toString(),
                 "bruh",
                 "bruh",
                 "bbr1",
@@ -59,12 +65,23 @@ public class SolarApplication extends Application {
         ));
 
         employees.add(new Employee(
+                UUID.randomUUID().toString(),
                 "lmao",
                 "lmao",
                 "llm1",
                 "password",
                 Role.INKOOP
         ));
+
+        for (int i = 0; i < 10; i++) {
+            customers.add(new Customer(
+                    UUID.randomUUID().toString(),
+                    "john" + i,
+                    "doe" + i,
+                    "address" + i,
+                    "0612345689"
+            ));
+        }
 
         SolarApplication.stage = stage;
         setScene("login.fxml");

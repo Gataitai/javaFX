@@ -5,9 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7fda7dd-03b0-4c9b-b090-25b599617451" name="Changes" comment="changes">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/adviseur/bruh.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/adviseur/new-quotation.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/adviseur/quotation-overview.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/inkoop/panel-overview.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/planner/new-team.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/planner/teams-overview.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/solarfx/SolarApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/SolarApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/solarfx/controllers/AdviseurController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/controllers/AdviseurController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/adviseur.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/adviseur.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/solarfx/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/solarfx/models/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/models/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/solarfx/models/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/models/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/solarfx/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/models/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/solarfx/models/Quotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/models/Quotation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/adviseur.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/inkoop.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/inkoop/new-panel.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/installeur.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/installeur/installeur-overview.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/planner.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/planner/planner.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,9 +40,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="FxmlFile" />
         <option value="JavaFXApplication" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -60,6 +77,14 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Gate\IdeaProjects\SolarFX\src\main\resources\com\example\solarfx\planner" />
+      <recent name="C:\Users\Gate\IdeaProjects\SolarFX\src\main\resources\com\example\solarfx\installeur" />
+      <recent name="C:\Users\Gate\IdeaProjects\SolarFX\src\main\resources\com\example\solarfx\inkoop" />
+      <recent name="C:\Users\Gate\IdeaProjects\SolarFX\src\main\resources\com\example\solarfx\adviseur" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="SolarApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.solarfx.SolarApplication" />
@@ -84,7 +109,10 @@
       <option name="presentableId" value="Default" />
       <updated>1680721051222</updated>
       <workItem from="1680721052671" duration="1601000" />
-      <workItem from="1680964365426" duration="952000" />
+      <workItem from="1680964365426" duration="1018000" />
+      <workItem from="1680965632475" duration="6153000" />
+      <workItem from="1680974135138" duration="1624000" />
+      <workItem from="1680979944922" duration="1220000" />
     </task>
     <task id="LOCAL-00001" summary="changes">
       <created>1680892847406</created>
@@ -114,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680917905917</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="changes">
+      <created>1680965541008</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680965541008</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,5 +158,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="changes" />
     <option name="LAST_COMMIT_MESSAGE" value="changes" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SolarFX$SolarApplication.ic" NAME="SolarApplication Coverage Results" MODIFIED="1680981156368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.example.solarfx.*</FILTER>
+    </SUITE>
   </component>
 </project>

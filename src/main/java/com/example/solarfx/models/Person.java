@@ -1,10 +1,12 @@
 package com.example.solarfx.models;
 
 public class Person {
+    private final String uuid;
     private final String firstName;
     private final String lastName;
 
-    public Person(String firstName, String lastName){
+    public Person(String uuid, String firstName, String lastName){
+        this.uuid = uuid;
         this.firstName = firstName;
         this.lastName = lastName;
     }
@@ -15,6 +17,11 @@ public class Person {
 
     public String getLastName() {
         return lastName;
+    }
+
+    @Override
+    public String toString() {
+        return this.getFirstName() + " " + this.getLastName();
     }
 
 }
