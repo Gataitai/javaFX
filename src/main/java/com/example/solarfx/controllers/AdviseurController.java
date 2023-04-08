@@ -31,6 +31,7 @@ public class AdviseurController {
 
 
 
+
     public void initialize() {
         customer.setItems(FXCollections.observableArrayList(OPTIONS));
         customer.setEditable(true);
