@@ -2,6 +2,7 @@ package com.example.solarfx.models;
 
 import javafx.scene.layout.Pane;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class Quotation {
@@ -10,7 +11,8 @@ public class Quotation {
     private int roofSurface;
     private boolean threePhaseConnectionNeeded = false;
     private int yieldLoss;
-    private ArrayList<Panel> panels = new ArrayList<>();
+    private LocalDate buildDate;
+    private final ArrayList<Panel> panels = new ArrayList<>();
 
     public Quotation(Customer customer){
         this.customer = customer;
@@ -30,6 +32,10 @@ public class Quotation {
 
     public void checkThreePhaseConnection(){
         this.threePhaseConnectionNeeded = true;
+    }
+
+    public void setBuildDate(LocalDate date){
+        this.buildDate = date;
     }
 
     public void setYieldLoss(int yieldLoss){

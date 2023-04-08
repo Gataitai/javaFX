@@ -5,14 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7fda7dd-03b0-4c9b-b090-25b599617451" name="Changes" comment="changes">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/models/InstallerGroup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/models/Panel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/models/Quotation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/models/Task.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/solarfx/SolarApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/SolarApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/header.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/header.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/solarfx/controllers/AdviseurController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/controllers/AdviseurController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/solarfx/models/InstallerGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/models/InstallerGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/solarfx/models/Quotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/models/Quotation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/solarfx/models/Scene.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/solarfx/models/Task.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/adviseur.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/adviseur.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680892847406</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="changes">
+      <created>1680898756261</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680898756261</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

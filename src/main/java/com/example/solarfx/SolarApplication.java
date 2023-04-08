@@ -13,14 +13,14 @@ import java.util.NoSuchElementException;
 public class SolarApplication extends Application {
 
     //list with customers
-    private static ArrayList<Customer> customers = new ArrayList<>();
+    private static final ArrayList<Customer> customers = new ArrayList<>();
     //list with employees
-    private static ArrayList<Employee> employees = new ArrayList<>();
+    private static final ArrayList<Employee> employees = new ArrayList<>();
+    private static final ArrayList<InstallerGroup> installerGroups = new ArrayList<>();
     //list with available panels
-    private static ArrayList<Panel> panels = new ArrayList<>();
+    private static final ArrayList<Panel> panels = new ArrayList<>();
     //list with all quotations;
-    private static ArrayList<Quotation> quotations = new ArrayList<>();
-    private sta
+    private static final ArrayList<Quotation> quotations = new ArrayList<>();
     public static Stage stage;
 
     @Override
@@ -93,13 +93,43 @@ public class SolarApplication extends Application {
         employees.add(employee);
     }
 
+    public static void addPanel(Panel panel) {
+        panels.add(panel);
+    }
+
+    public static void addInstallerGroup(InstallerGroup installerGroup) {
+        installerGroups.add(installerGroup);
+    }
+
+    public static void addQuotation(Quotation quotation) {
+        quotations.add(quotation);
+    }
+
     public static Customer getCustomerByFirstName(String firstname) {
         for (Customer customer : customers) {
             if (customer.getFirstName().equalsIgnoreCase(firstname)) {
                 return customer;
             }
         }
-        return null;
+        throw new NoSuchElementException("Customer with firstName: " + firstname + " doesnt exist!");
+    }
+
+    public static Panel getPanelByName(String panelName) {
+        for (Panel panel : panels) {
+            if (panel.getName().equalsIgnoreCase(panelName)) {
+                return panel;
+            }
+        }
+        throw new NoSuchElementException("Panel with name: " + panelName + " doesnt exist!");
+    }
+
+    public static InstallerGroup getInstallerGroupByName(String name) {
+        for (InstallerGroup installerGroup : installerGroups) {
+            if (installerGroup.getName().equalsIgnoreCase(name)) {
+                return installerGroup;
+            }
+        }
+        throw new NoSuchElementException("InstallerGroup with name: " + name + " doesnt exist!");
     }
 
     public static Employee getEmployeeByUsername(String username) {
