@@ -21,13 +21,13 @@ public class AdviseurController {
     private TextField roofSurface;
 
     @FXML
-    private CheckBox threePhaseConnectionNeeded;
+    private CheckBox threePhaseNeeded;
 
     @FXML
     private TextField yieldLoss;
 
     @FXML
-    private ComboBox<String> panels;
+    private ChoiceBox<String> panels;
 
 
 
@@ -36,7 +36,6 @@ public class AdviseurController {
         customer.setEditable(true);
 
         panels.setItems(FXCollections.observableArrayList(OPTIONS));
-        panels.setEditable(true);
     }
 }
 

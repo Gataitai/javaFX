@@ -7,10 +7,22 @@
 
     <fx:include source="header.fxml" />
 
-    <ComboBox fx:id="customers" layoutX="14.0" layoutY="59.0" prefHeight="25.0" prefWidth="172.0" />
     <Label layoutX="14.0" layoutY="42.0" prefHeight="17.0" prefWidth="62.0" text="Customer" />
-    <TextField layoutX="14.0" layoutY="111.0" />
+    <ComboBox fx:id="customer" layoutX="14.0" layoutY="59.0" prefHeight="25.0" prefWidth="172.0" />
+
     <Label layoutX="14.0" layoutY="94.0" prefHeight="17.0" prefWidth="166.0" text="Yearly engery usage watts" />
-    <TextField layoutX="14.0" layoutY="168.0" />
+    <TextField fx:id="yearlyEnergyUsage" layoutX="14.0" layoutY="111.0" prefHeight="25.0" prefWidth="172.0" />
+
     <Label layoutX="14.0" layoutY="151.0" text="Roofsurface" />
+    <TextField fx:id="roofSurface" layoutX="14.0" layoutY="168.0" prefHeight="25.0" prefWidth="172.0" />
+
+     <CheckBox layoutX="14.0" layoutY="211.0" mnemonicParsing="false" text="3 phase needed" />
+
+    <Label layoutX="14.0" layoutY="246.0" text="Yield loss" />
+    <TextField fx:id="yieldLoss" layoutX="14.0" layoutY="263.0" prefHeight="25.0" prefWidth="172.0" />
+
+    <Label layoutX="14.0" layoutY="301.0" text="Add panels" />
+    <ChoiceBox fx:id="panels" layoutX="14.0" layoutY="318.0" prefHeight="25.0" prefWidth="172.0" />
+   <ListView layoutX="250.0" layoutY="60.0" prefHeight="285.0" prefWidth="407.0" />
+
 </AnchorPane>
