@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.solarfx.controllers.inkoop.PurchaseOverviewController">
+
+    <fx:include source="../header.fxml" />
+
+   <TableView fx:id="quotationsTable" layoutX="427.0" layoutY="59.0" prefHeight="382.0" prefWidth="225.0">
+     <columns>
+       <TableColumn fx:id="quotationsColumn" prefWidth="224.0" text="Quotation" />
+     </columns>
+   </TableView>
+
+   <TableView fx:id="panelsTable" layoutX="37.0" layoutY="59.0" prefHeight="337.0" prefWidth="355.0">
+     <columns>
+       <TableColumn fx:id="panelsNameColumn" prefWidth="165.0" text="Panel name" />
+       <TableColumn fx:id="panelsPriceColumn" prefWidth="189.0" text="Price" />
+     </columns>
+   </TableView>
+   <Button fx:id="newPanel" layoutX="37.0" layoutY="416.0" onAction="#setNewPanelScene" mnemonicParsing="false" prefHeight="25.0" prefWidth="355.0" text="New panel" />
+
+
+</AnchorPane>

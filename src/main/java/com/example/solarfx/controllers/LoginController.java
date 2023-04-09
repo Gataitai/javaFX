@@ -37,8 +37,8 @@ public class LoginController {
             switch (employee.getRole()) {
                 case INSTALLEUR -> SolarApplication.setScene("installeur/installeur-overview.fxml");
                 case ADVISEUR -> SolarApplication.setScene("adviseur/quotation-overview.fxml");
-                case INKOOP -> SolarApplication.setScene("inkoop/new-panel.fxml");
-                case PLANNER -> SolarApplication.setScene("planner/planner.fxml");
+                case INKOOP -> SolarApplication.setScene("inkoop/purchase-overview.fxml");
+                case PLANNER -> SolarApplication.setScene("planner/teams-overview.fxml");
             }
         } else {
             errorLabel.setTextFill(Paint.valueOf("red"));

@@ -1,8 +1,10 @@
 package com.example.solarfx;
 
+import com.example.solarfx.controllers.planner.TeamDetailController;
 import com.example.solarfx.models.*;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
@@ -55,14 +57,22 @@ public class SolarApplication extends Application {
                 Role.PLANNER
         ));
 
-        employees.add(new Employee(
-                UUID.randomUUID().toString(),
-                "bruh",
-                "bruh",
-                "bbr1",
-                "password",
-                Role.INSTALLEUR
-        ));
+        for (int i = 0; i < 10; i++) {
+            employees.add(new Employee(
+                    UUID.randomUUID().toString(),
+                    "bruh" + i,
+                    "bruh" + i,
+                    "bbr"+ i,
+                    "password",
+                    Role.INSTALLEUR
+            ));
+        }
+
+        InstallerGroup installerGroup = new InstallerGroup("groep 1");
+        installerGroup.addInstallerByUsername("bbr1");
+        installerGroup.addInstallerByUsername("bbr2");
+        installerGroups.add(installerGroup);
+
 
         employees.add(new Employee(
                 UUID.randomUUID().toString(),
@@ -71,6 +81,12 @@ public class SolarApplication extends Application {
                 "llm1",
                 "password",
                 Role.INKOOP
+        ));
+
+        panels.add(new Panel(
+                "paneeltje",
+                200,
+                200
         ));
 
         for (int i = 0; i < 10; i++) {
@@ -95,6 +111,28 @@ public class SolarApplication extends Application {
             stage.show();
         }catch(IOException e){
             System.err.println(e);
+        }
+    }
+
+    public static void setScene(String fxmlFile, Object data) {
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(SolarApplication.class.getResource(fxmlFile));
+            Parent root = loader.load();
+            Scene scene = new Scene(root);
+
+            // Pass the selected InstallerGroup object to the next controller
+            if (data != null) {
+                Object controller = loader.getController();
+                if (controller instanceof TeamDetailController) {
+                    ((TeamDetailController) controller).setData((InstallerGroup) data);
+                }
+            }
+
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 

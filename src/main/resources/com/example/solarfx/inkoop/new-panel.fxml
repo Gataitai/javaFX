@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.solarfx.controllers.inkoop.InkoopController" />
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.solarfx.controllers.inkoop.NewPanelController">
+   <children>
+      <Label layoutX="173.0" layoutY="92.0" text="Name" />
+      <Label layoutX="173.0" layoutY="157.0" text="Wattage" />
+      <Label layoutX="173.0" layoutY="227.0" text="Price" />
+      <TextField layoutX="173.0" layoutY="109.0" />
+      <TextField layoutX="173.0" layoutY="174.0" />
+      <TextField layoutX="173.0" layoutY="250.0" />
+      <Button layoutX="175.0" layoutY="314.0" mnemonicParsing="false" text="Create panel" />
+      <Button layoutX="450.0" layoutY="314.0" onAction="#setOverviewScene" mnemonicParsing="false" text="Go back" />
+   </children>
+</AnchorPane>

@@ -3,7 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.solarfx.controllers.planner.NewTeamController">
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.solarfx.controllers.planner.TeamDetailController">
 
     <fx:include source="../header.fxml" />
 
@@ -23,7 +23,7 @@
         </columns>
     </TableView>
 
-    <Button fx:id="createButton" layoutX="15.0" layoutY="452.0" onAction="#createTeam" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Create team" />
+    <Button fx:id="editButton" layoutX="15.0" layoutY="452.0" onAction="#editTeam" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Save team" />
     <Button fx:id="goBackButton" layoutX="518.0" layoutY="452.0" mnemonicParsing="false" onAction="#setOverviewScreen" prefHeight="25.0" prefWidth="129.0" text="Go back" />
 
 </AnchorPane>

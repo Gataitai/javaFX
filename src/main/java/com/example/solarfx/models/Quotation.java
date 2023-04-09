@@ -13,18 +13,45 @@ public class Quotation {
     private boolean threePhaseConnectionNeeded = false;
     private int yieldLoss;
     private LocalDate buildDate;
-    private final ArrayList<Panel> panels = new ArrayList<>();
+    private Panel panel;
+    private int panelAmount;
 
-    public Quotation(Customer customer, int yearlyEnergyUsage, int roofSurface, boolean threePhaseConnectionNeeded, int yieldLoss) {
+    public Quotation(Customer customer, int yearlyEnergyUsage, int roofSurface, boolean threePhaseConnectionNeeded, int yieldLoss, Panel panel, int panelAmount) {
         this.customer = customer;
         this.yearlyEnergyUsage = yearlyEnergyUsage;
         this.roofSurface = roofSurface;
         this.threePhaseConnectionNeeded = threePhaseConnectionNeeded;
         this.yieldLoss = yieldLoss;
+        this.panel = panel;
+        this.panelAmount = panelAmount;
     }
 
-    public void addPanel(Panel panel){
-        this.panels.add(panel);
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public int getYearlyEnergyUsage() {
+        return yearlyEnergyUsage;
+    }
+
+    public int getRoofSurface() {
+        return roofSurface;
+    }
+
+    public boolean isThreePhaseConnectionNeeded() {
+        return threePhaseConnectionNeeded;
+    }
+
+    public int getYieldLoss() {
+        return yieldLoss;
+    }
+
+    public LocalDate getBuildDate() {
+        return buildDate;
+    }
+
+    public Panel getPanel() {
+        return panel;
     }
 
     public void setYearlyEnergyUsage(int yearlyEnergyUsage){
@@ -45,5 +72,10 @@ public class Quotation {
 
     public void setYieldLoss(int yieldLoss){
         this.yieldLoss = yieldLoss;
+    }
+
+    @Override
+    public String toString() {
+        return "Quotation for " + getCustomer().getFirstName() + " " + getCustomer().getLastName();
     }
 }

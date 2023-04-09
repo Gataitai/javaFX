@@ -6,14 +6,23 @@ import java.util.ArrayList;
 
 public class InstallerGroup {
     private final String name;
-    private final ArrayList<Employee> installers = new ArrayList<>();
+    private ArrayList<Employee> installers = new ArrayList<>();
 
     public InstallerGroup(String name) {
         this.name = name;
     }
 
+    public InstallerGroup(String name, ArrayList<Employee> installers) {
+        this.name = name;
+        this.installers = installers;
+    }
+
     public String getName() {
         return name;
+    }
+
+    public ArrayList<Employee> getInstallers() {
+        return installers;
     }
 
     //finds an employee that's also an installer
@@ -55,14 +64,9 @@ public class InstallerGroup {
         return index;
     }
 
-    //gets all the tasks on a given date
-//    public ArrayList<Task> getTasksByDate(LocalDate date) {
-//        ArrayList<Task> tasksOnDate = new ArrayList<>();
-//        for (Task task : tasks) {
-//            if (task.getDate().equals(date)) {
-//                tasksOnDate.add(task);
-//            }
-//        }
-//        return tasksOnDate;
-//    }
+    @Override
+    public String toString() {
+        return name;
+    }
+
 }

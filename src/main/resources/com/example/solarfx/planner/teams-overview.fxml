@@ -8,7 +8,17 @@
 
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.solarfx.planner.TeamsOverview"
-            prefHeight="400.0" prefWidth="600.0">
+            fx:controller="com.example.solarfx.controllers.planner.TeamsOverviewController"
+            prefHeight="500.0" prefWidth="700.0">
+
+
+    <fx:include source="../header.fxml" />
+    <Button fx:id="newTeam" layoutX="35.0" layoutY="47.0" onAction="#setNewTeamScene" mnemonicParsing="false" prefHeight="25.0" prefWidth="117.0" text="new team" />
+    <TableView fx:id="installerGroupTable" layoutX="35.0" layoutY="102.0" prefHeight="363.0" prefWidth="629.0">
+        <columns>
+            <TableColumn fx:id="installerGroupColumn" prefWidth="269.0" text="team name" />
+        </columns>
+    </TableView>
+    <Label fx:id="groupsAmount" layoutX="175.0" layoutY="51.0" prefHeight="17.0" prefWidth="94.0" text="Label" />
 
 </AnchorPane>
