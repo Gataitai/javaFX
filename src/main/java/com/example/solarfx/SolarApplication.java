@@ -61,30 +61,30 @@ public class SolarApplication extends Application {
 
         for (int i = 0; i < 10; i++) {
             employees.add(new Employee(
-                    "bruh" + i,
-                    "bruh" + i,
-                    "bbr"+ i,
+                    "installeur" + i,
+                    "installeur" + i,
+                    "ins"+ i,
                     "password",
                     Role.INSTALLEUR
             ));
         }
 
         InstallerGroup installerGroup = new InstallerGroup("groep 1");
-        installerGroup.addInstallerByUsername("bbr1");
-        installerGroup.addInstallerByUsername("bbr2");
+        installerGroup.addInstallerByUsername("ins1");
+        installerGroup.addInstallerByUsername("ins2");
         installerGroups.add(installerGroup);
 
 
         employees.add(new Employee(
-                "lmao",
-                "lmao",
-                "llm1",
+                "inkoper",
+                "inkoper",
+                "ink",
                 "password",
                 Role.INKOOP
         ));
 
         panels.add(new Panel(
-                "paneeltje",
+                "Solar panel",
                 200,
                 200
         ));
