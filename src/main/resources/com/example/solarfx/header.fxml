@@ -9,8 +9,8 @@
             <MenuItem onAction="#handleLogout" text="Logout" />
         </Menu>
     </MenuBar>
-   <Button mnemonicParsing="false" text="Adviseur" />
-   <Button fx:id="plannerButton" layoutX="74.0" mnemonicParsing="false" text="Planner" />
-   <Button fx:id="inkoopButton" layoutX="142.0" mnemonicParsing="false" text="Inkoop" />
-   <Button fx:id="medewerkerBeheerButton" layoutX="206.0" mnemonicParsing="false" text="Medewerker beheer" />
+   <Button fx:id="adviseurButton" onAction="#setAdviseurScreen" mnemonicParsing="false" text="Adviseur" />
+   <Button fx:id="plannerButton" onAction="#setPlannerScreen" layoutX="74.0" mnemonicParsing="false" text="Planner" />
+   <Button fx:id="inkoopButton" onAction="#setInkoopScreen" layoutX="142.0" mnemonicParsing="false" text="Inkoop" />
+   <Button fx:id="medewerkerBeheerButton" onAction="#setMedewerkerBeheerScreen" layoutX="206.0" mnemonicParsing="false" text="Medewerker beheer" />
 </AnchorPane>

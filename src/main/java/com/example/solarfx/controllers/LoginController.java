@@ -34,11 +34,13 @@ public class LoginController {
         if (checkLoginCredentials(username, password)) {
             //switch for employee role. since employee is checked first employee can never be null in this part of the scope.
             Employee employee = SolarApplication.getEmployeeByUsername(username);
+            SolarApplication.currentLoggedInRole = employee.getRole();
             switch (employee.getRole()) {
                 case INSTALLEUR -> SolarApplication.setScene("installeur/installeur-overview.fxml");
                 case ADVISEUR -> SolarApplication.setScene("adviseur/quotation-overview.fxml");
                 case INKOOP -> SolarApplication.setScene("inkoop/purchase-overview.fxml");
                 case PLANNER -> SolarApplication.setScene("planner/teams-overview.fxml");
+                case ADMIN -> SolarApplication.setScene("adviseur/quotation-overview.fxml");
             }
         } else {
             errorLabel.setTextFill(Paint.valueOf("red"));

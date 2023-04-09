@@ -1,6 +1,7 @@
 package com.example.solarfx.controllers.inkoop;
 
 import com.example.solarfx.SolarApplication;
+import com.example.solarfx.models.Employee;
 import com.example.solarfx.models.Panel;
 import com.example.solarfx.models.Quotation;
 import javafx.beans.property.SimpleStringProperty;
@@ -46,6 +47,12 @@ public class PurchaseOverviewController {
                 handleQuotationClick();
             }
         });
+
+        panelsTable.setOnMouseClicked(e -> {
+            if (e.getClickCount() == 1) {
+                handlePanelClick();
+            }
+        });
     }
 
     @FXML
@@ -59,6 +66,15 @@ public class PurchaseOverviewController {
         if (quotation != null) {
             // Pass the selected InstallerGroup object to the next FXML page
             SolarApplication.setScene("inkoop/purchase-detail.fxml", quotation);
+        }
+    }
+
+    @FXML
+    private void handlePanelClick() {
+        Panel panel = panelsTable.getSelectionModel().getSelectedItem();
+        if (panel != null) {
+            // Pass the selected InstallerGroup object to the next FXML page
+            SolarApplication.setScene("inkoop/panel-detail.fxml", panel);
         }
     }
 

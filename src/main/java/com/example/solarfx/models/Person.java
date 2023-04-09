@@ -19,6 +19,10 @@ public class Person {
         return lastName;
     }
 
+    public String getUuid() {
+        return uuid;
+    }
+
     @Override
     public String toString() {
         return this.getFirstName() + " " + this.getLastName();

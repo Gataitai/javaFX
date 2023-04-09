@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.solarfx.controllers.admin.EmployeDetailController">
+
+    <fx:include source="../header.fxml" />
+   <Label fx:id="firstnameLabel" layoutX="167.0" layoutY="93.0" text="Label" />
+   <Label fx:id="lastnameLabel" layoutX="167.0" layoutY="160.0" text="Label" />
+   <Label fx:id="usernameLabel" layoutX="167.0" layoutY="227.0" text="Label" />
+
+   <Label layoutX="169.0" layoutY="293.0" text="Role" />
+   <ComboBox fx:id="roles" layoutX="169.0" layoutY="310.0" prefWidth="150.0" />
+   
+   <Button fx:id="saveButton" onAction="#saveEmployee" layoutX="169.0" layoutY="421.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Save employee" />
+   <Button fx:id="goBackButton" onAction="#setEmployeeOverviewScene" layoutX="412.0" layoutY="421.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Go back" />
+
+</AnchorPane>

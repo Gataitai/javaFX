@@ -1,12 +1,14 @@
 package com.example.solarfx.models;
 
+import java.util.UUID;
+
 public class Employee extends Person {
     private final String username;
     private final String password;
     private Role role;
 
-    public Employee(String uuid, String firstName, String lastName, String username, String password, Role role){
-        super(uuid, firstName, lastName);
+    public Employee(String firstName, String lastName, String username, String password, Role role){
+        super(UUID.randomUUID().toString(), firstName, lastName);
         this.username = username;
         this.password = password;
         this.role = role;

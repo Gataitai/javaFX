@@ -1,22 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="SolarFX:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7fda7dd-03b0-4c9b-b090-25b599617451" name="Changes" comment="changes">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/controllers/inkoop/PurchaseDetailController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/inkoop/purchase-detail.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/SolarFX_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/controllers/admin/EmployeDetailController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/controllers/admin/NewEmployeeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/controllers/inkoop/PanelDetailController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/admin/employee-detail.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/admin/employee-overview.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/admin/new-employee.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/inkoop/panel-detail.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/solarfx/SolarApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/SolarApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/solarfx/controllers/HeaderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/controllers/HeaderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/solarfx/controllers/inkoop/NewPanelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/controllers/inkoop/NewPanelController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/solarfx/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/solarfx/controllers/admin/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/controllers/admin/EmployeeOverviewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/solarfx/controllers/inkoop/PurchaseOverviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/controllers/inkoop/PurchaseOverviewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/solarfx/models/Quotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/models/Quotation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/solarfx/models/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/models/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/solarfx/models/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/models/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/solarfx/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/models/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/header.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/header.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/inkoop/new-panel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/inkoop/new-panel.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/inkoop/panel-overview.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/installeur/installeur-overview.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/installeur/installeur-overview.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,18 +69,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Gate\IdeaProjects\SolarFX\src\main\resources\com\example\solarfx\planner" />
@@ -106,7 +122,7 @@
       <workItem from="1680974135138" duration="1624000" />
       <workItem from="1680979944922" duration="1307000" />
       <workItem from="1680982575240" duration="18915000" />
-      <workItem from="1681046113740" duration="5184000" />
+      <workItem from="1681046113740" duration="20919000" />
     </task>
     <task id="LOCAL-00001" summary="changes">
       <created>1680892847406</created>
@@ -157,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681011531913</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="changes">
+      <created>1681052148796</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1681052148796</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,7 +191,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="changes" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/SolarFX$SolarApplication.ic" NAME="SolarApplication Coverage Results" MODIFIED="1681005310902" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/SolarFX$SolarApplication.ic" NAME="SolarApplication Coverage Results" MODIFIED="1681059151105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.example.solarfx.*</FILTER>
     </SUITE>
   </component>

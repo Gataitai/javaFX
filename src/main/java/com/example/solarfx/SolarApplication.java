@@ -1,5 +1,7 @@
 package com.example.solarfx;
 
+import com.example.solarfx.controllers.admin.EmployeDetailController;
+import com.example.solarfx.controllers.inkoop.PanelDetailController;
 import com.example.solarfx.controllers.inkoop.PurchaseDetailController;
 import com.example.solarfx.controllers.planner.TeamDetailController;
 import com.example.solarfx.models.*;
@@ -26,13 +28,14 @@ public class SolarApplication extends Application {
     public static final ArrayList<Panel> panels = new ArrayList<>();
     //list with all quotations;
     public static final ArrayList<Quotation> quotations = new ArrayList<>();
+
+    public static Role currentLoggedInRole;
     public static Stage stage;
 
     @Override
     public void start(Stage stage) {
 
         employees.add(new Employee(
-                UUID.randomUUID().toString(),
                 "mathijs",
                 "pattipeilohy",
                 "mpa1",
@@ -41,7 +44,6 @@ public class SolarApplication extends Application {
         ));
 
         employees.add(new Employee(
-                UUID.randomUUID().toString(),
                 "adam",
                 "geerdink",
                 "age1",
@@ -50,7 +52,6 @@ public class SolarApplication extends Application {
         ));
 
         employees.add(new Employee(
-                UUID.randomUUID().toString(),
                 "samme",
                 "logtmijer",
                 "slo1",
@@ -60,7 +61,6 @@ public class SolarApplication extends Application {
 
         for (int i = 0; i < 10; i++) {
             employees.add(new Employee(
-                    UUID.randomUUID().toString(),
                     "bruh" + i,
                     "bruh" + i,
                     "bbr"+ i,
@@ -76,7 +76,6 @@ public class SolarApplication extends Application {
 
 
         employees.add(new Employee(
-                UUID.randomUUID().toString(),
                 "lmao",
                 "lmao",
                 "llm1",
@@ -92,7 +91,6 @@ public class SolarApplication extends Application {
 
         for (int i = 0; i < 10; i++) {
             customers.add(new Customer(
-                    UUID.randomUUID().toString(),
                     "john" + i,
                     "doe" + i,
                     "address" + i,
@@ -130,6 +128,12 @@ public class SolarApplication extends Application {
                 }
                 if (controller instanceof PurchaseDetailController) {
                     ((PurchaseDetailController) controller).setData((Quotation) data);
+                }
+                if (controller instanceof EmployeDetailController) {
+                    ((EmployeDetailController) controller).setData((Employee) data);
+                }
+                if (controller instanceof PanelDetailController) {
+                    ((PanelDetailController) controller).setData((Panel) data);
                 }
             }
 

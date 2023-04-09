@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.solarfx.controllers.admin.NewEmployeeController">
+
+    <fx:include source="../header.fxml" />
+
+   <Label layoutX="42.0" layoutY="52.0" text="Firstname" />
+   <TextField fx:id="firstnameField" layoutX="42.0" layoutY="69.0" />
+
+   <Label layoutX="42.0" layoutY="111.0" text="Lastname" />
+   <TextField fx:id="lastnameField" layoutX="42.0" layoutY="128.0" />
+
+   <Label layoutX="42.0" layoutY="172.0" text="Username" />
+   <TextField fx:id="usernameField" layoutX="42.0" layoutY="189.0" />
+
+   <Label layoutX="42.0" layoutY="233.0" text="Password" />
+   <TextField fx:id="passwordField" layoutX="42.0" layoutY="250.0" />
+
+   <Label layoutX="42.0" layoutY="292.0" text="Role" />
+   <ComboBox fx:id="roles" layoutX="42.0" layoutY="309.0" prefWidth="150.0" />
+
+   <Button fx:id="createButton" onAction="#addEmployee" layoutX="43.0" layoutY="427.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Create employee" />
+   <Button fx:id="goBackButton" onAction="#setEmployeeOverviewScene" layoutX="488.0" layoutY="427.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="137.0" text="Go back" />
+
+    
+</AnchorPane>

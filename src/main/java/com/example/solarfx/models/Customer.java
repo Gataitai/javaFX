@@ -1,11 +1,13 @@
 package com.example.solarfx.models;
 
+import java.util.UUID;
+
 public class Customer extends Person{
     private String address;
     private String phoneNumber;
 
-    public Customer(String uuid, String firstName, String lastName, String address, String phoneNumber) {
-        super(uuid, firstName, lastName);
+    public Customer(String firstName, String lastName, String address, String phoneNumber) {
+        super(UUID.randomUUID().toString(), firstName, lastName);
         this.address = address;
         this.phoneNumber = phoneNumber;
     }

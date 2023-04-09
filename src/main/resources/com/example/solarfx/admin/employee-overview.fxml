@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.solarfx.controllers.admin.EmployeeOverviewController">
+
+    <fx:include source="../header.fxml" />
+   <TableView fx:id="employeeTable" layoutX="51.0" layoutY="52.0" prefHeight="359.0" prefWidth="594.0">
+     <columns>
+         <TableColumn fx:id="firstnameColumn" prefWidth="136.0" text="Firstname" />
+         <TableColumn fx:id="lastnameColumn" prefWidth="165.0" text="Lastname" />
+         <TableColumn fx:id="usernameColumn" prefWidth="146.0" text="Username" />
+         <TableColumn fx:id="roleColumn" minWidth="0.0" prefWidth="146.0" text="Role" />
+     </columns>
+   </TableView>
+
+   <Button fx:id="newEmployee" onAction="#setNewEmployeeScene" layoutX="51.0" layoutY="438.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="594.0" text="Make new employee" />
+
+</AnchorPane>
