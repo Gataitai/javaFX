@@ -5,33 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7fda7dd-03b0-4c9b-b090-25b599617451" name="Changes" comment="changes">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/controllers/adviseur/QuotationDetailController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/controllers/inkoop/NewPanelController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/controllers/inkoop/PurchaseOverviewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/controllers/planner/TeamDetailController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/controllers/planner/TeamPlannerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/controllers/planner/TeamsOverviewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/adviseur/quotation-detail.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/inkoop/purchase-overview.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/planner/team-detail.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/controllers/inkoop/PurchaseDetailController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/inkoop/purchase-detail.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/solarfx/SolarApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/SolarApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/solarfx/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/controllers/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/solarfx/controllers/adviseur/NewQuotationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/controllers/adviseur/NewQuotationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/solarfx/controllers/adviseur/QuotationOverviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/controllers/adviseur/QuotationOverviewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/solarfx/controllers/inkoop/InkoopController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/solarfx/controllers/planner/PlannerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/controllers/planner/NewTeamController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/solarfx/models/InstallerGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/models/InstallerGroup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/solarfx/models/Panel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/models/Panel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/solarfx/controllers/HeaderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/controllers/HeaderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/solarfx/controllers/inkoop/NewPanelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/controllers/inkoop/NewPanelController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/solarfx/controllers/inkoop/PurchaseOverviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/controllers/inkoop/PurchaseOverviewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/solarfx/models/Quotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/solarfx/models/Quotation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/adviseur/new-quotation.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/adviseur/new-quotation.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/adviseur/quotation-overview.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/adviseur/quotation-overview.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/header.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/header.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/inkoop/new-panel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/inkoop/new-panel.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/inkoop/panel-overview.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/inkoop/panel-overview.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/planner/new-team.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/planner/new-team.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/planner/planner.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/planner/team-planner.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/planner/teams-overview.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/planner/teams-overview.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/inkoop/panel-overview.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/installeur/installeur-overview.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/solarfx/installeur/installeur-overview.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,8 +33,8 @@
       <list>
         <option value="Enum" />
         <option value="JavaFXApplication" />
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -120,7 +105,8 @@
       <workItem from="1680965632475" duration="6153000" />
       <workItem from="1680974135138" duration="1624000" />
       <workItem from="1680979944922" duration="1307000" />
-      <workItem from="1680982575240" duration="18850000" />
+      <workItem from="1680982575240" duration="18915000" />
+      <workItem from="1681046113740" duration="5184000" />
     </task>
     <task id="LOCAL-00001" summary="changes">
       <created>1680892847406</created>
@@ -164,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680981243300</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="changes">
+      <created>1681011531913</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1681011531913</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

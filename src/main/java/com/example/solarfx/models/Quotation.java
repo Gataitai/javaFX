@@ -54,6 +54,10 @@ public class Quotation {
         return panel;
     }
 
+    public int getPanelAmount() {
+        return panelAmount;
+    }
+
     public void setYearlyEnergyUsage(int yearlyEnergyUsage){
         this.yearlyEnergyUsage = yearlyEnergyUsage;
     }

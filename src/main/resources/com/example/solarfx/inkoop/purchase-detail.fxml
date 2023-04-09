@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.solarfx.controllers.inkoop.PurchaseDetailController">
+   <fx:include source="../header.fxml" />
+   <Label fx:id="quotationName" layoutX="282.0" layoutY="161.0" text="Label" />
+   <Label layoutX="281.0" layoutY="233.0" text="Panel" />
+   <TextField fx:id="panelName" layoutX="281.0" layoutY="250.0" />
+
+   <Label fx:id="amountLabel" layoutX="438.0" layoutY="254.0" text="x" />
+
+   <Label fx:id="priceLabel" layoutX="282.0" layoutY="287.0" text="Label" />
+
+   <Button fx:id="goBackButton" layoutX="325.0" layoutY="339.0" mnemonicParsing="false" onAction="#setOverviewScene" text="Go back" />
+
+    
+</AnchorPane>

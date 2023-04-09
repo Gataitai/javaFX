@@ -1,5 +1,6 @@
 package com.example.solarfx;
 
+import com.example.solarfx.controllers.inkoop.PurchaseDetailController;
 import com.example.solarfx.controllers.planner.TeamDetailController;
 import com.example.solarfx.models.*;
 import javafx.application.Application;
@@ -126,6 +127,9 @@ public class SolarApplication extends Application {
                 Object controller = loader.getController();
                 if (controller instanceof TeamDetailController) {
                     ((TeamDetailController) controller).setData((InstallerGroup) data);
+                }
+                if (controller instanceof PurchaseDetailController) {
+                    ((PurchaseDetailController) controller).setData((Quotation) data);
                 }
             }
 

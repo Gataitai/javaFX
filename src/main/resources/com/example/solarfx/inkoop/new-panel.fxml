@@ -5,14 +5,19 @@
 
 
 <AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.solarfx.controllers.inkoop.NewPanelController">
+   <fx:include source="../header.fxml" />
+
    <children>
       <Label layoutX="173.0" layoutY="92.0" text="Name" />
+      <TextField fx:id="panelName" layoutX="173.0" layoutY="109.0" />
+
       <Label layoutX="173.0" layoutY="157.0" text="Wattage" />
+      <TextField fx:id="panelWattage" layoutX="173.0" layoutY="174.0" />
+
       <Label layoutX="173.0" layoutY="227.0" text="Price" />
-      <TextField layoutX="173.0" layoutY="109.0" />
-      <TextField layoutX="173.0" layoutY="174.0" />
-      <TextField layoutX="173.0" layoutY="250.0" />
-      <Button layoutX="175.0" layoutY="314.0" mnemonicParsing="false" text="Create panel" />
-      <Button layoutX="450.0" layoutY="314.0" onAction="#setOverviewScene" mnemonicParsing="false" text="Go back" />
+      <TextField fx:id="panelPrice" layoutX="173.0" layoutY="250.0" />
+
+      <Button fx:id="createButton" onAction="#addPanel" layoutX="175.0" layoutY="314.0" mnemonicParsing="false" text="Create panel" />
+      <Button fx:id="goBackButton" layoutX="450.0" layoutY="314.0" onAction="#setOverviewScene" mnemonicParsing="false" text="Go back" />
    </children>
 </AnchorPane>

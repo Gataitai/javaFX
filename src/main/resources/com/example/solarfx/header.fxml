@@ -3,10 +3,14 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="20" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" style="-fx-background-color: #bbbbbb;" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.solarfx.controllers.HeaderController">
+<AnchorPane prefHeight="20" prefWidth="700.0" style="-fx-background-color: #bbbbbb;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.solarfx.controllers.HeaderController">
     <MenuBar layoutX="633.0" prefHeight="20.0" prefWidth="67.0">
         <Menu text="Menu">
             <MenuItem onAction="#handleLogout" text="Logout" />
         </Menu>
     </MenuBar>
+   <Button mnemonicParsing="false" text="Adviseur" />
+   <Button fx:id="plannerButton" layoutX="74.0" mnemonicParsing="false" text="Planner" />
+   <Button fx:id="inkoopButton" layoutX="142.0" mnemonicParsing="false" text="Inkoop" />
+   <Button fx:id="medewerkerBeheerButton" layoutX="206.0" mnemonicParsing="false" text="Medewerker beheer" />
 </AnchorPane>

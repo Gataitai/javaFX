@@ -1,7 +1,6 @@
 package com.example.solarfx.controllers.inkoop;
 
 import com.example.solarfx.SolarApplication;
-import com.example.solarfx.models.InstallerGroup;
 import com.example.solarfx.models.Panel;
 import com.example.solarfx.models.Quotation;
 import javafx.beans.property.SimpleStringProperty;
@@ -42,8 +41,11 @@ public class PurchaseOverviewController {
         panelsPriceColumn.setCellValueFactory(cellData -> new SimpleStringProperty(String.valueOf(cellData.getValue().getPrice())));
         quotationsColumn.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().toString()));
 
-        panelsTable.getColumns().setAll(panelsNameColumn, panelsPriceColumn);
-        quotationsColumn.getColumns().setAll(quotationsColumn);
+        quotationsTable.setOnMouseClicked(e -> {
+            if (e.getClickCount() == 1) {
+                handleQuotationClick();
+            }
+        });
     }
 
     @FXML
@@ -51,12 +53,13 @@ public class PurchaseOverviewController {
         SolarApplication.setScene("inkoop/new-panel.fxml");
     }
 
-//    @FXML
-//    private void handleInstallerGroupClick() {
-//        InstallerGroup selectedGroup = installerGroupTable.getSelectionModel().getSelectedItem();
-//        if (selectedGroup != null) {
-//            // Pass the selected InstallerGroup object to the next FXML page
-//            SolarApplication.setScene("planner/team-detail.fxml", selectedGroup);
-//        }
-//    }
+    @FXML
+    private void handleQuotationClick() {
+        Quotation quotation = quotationsTable.getSelectionModel().getSelectedItem();
+        if (quotation != null) {
+            // Pass the selected InstallerGroup object to the next FXML page
+            SolarApplication.setScene("inkoop/purchase-detail.fxml", quotation);
+        }
+    }
+
 }

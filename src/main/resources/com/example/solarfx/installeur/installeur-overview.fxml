@@ -11,4 +11,6 @@
             fx:controller="com.example.solarfx.controllers.installeur.InstalleurController"
             prefHeight="500.0" prefWidth="700.0">
 
+    <fx:include source="../header.fxml" />
+    
 </AnchorPane>

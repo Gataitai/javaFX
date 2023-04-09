@@ -13,6 +13,8 @@ import java.util.Objects;
 
 public class HeaderController {
 
+
+
     @FXML
     private Button logoutButton;
 
